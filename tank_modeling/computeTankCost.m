@@ -1,7 +1,9 @@
 function [costTotal, cylinderLength] = computeTankCost(...
     volume, radius, materialsCost, weldingCost)
-%COMPUTETANKCOST Summary of this function goes here
-%   Detailed explanation goes here
+    % Name of Function - computeTankCost
+    % Inputs - volume, radius, materialsCost, weldingCost
+    % Outputs - costTotal, cylinderLength
+    % Implementation - Calculate cost of each part and weld then sum
 
     cylinderLength = (volume / (pi * (radius^2))) - ((4*radius) / 3);
     
