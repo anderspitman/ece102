@@ -37,8 +37,8 @@ function [ freshAirVolumeTotal ] = evacuateLowerBound(...
         fprintf('-------------------------------------------\n');
     end
 
-    fprintf('Final methane concentration: %f\n', methaneConcentration);
-    fprintf('Number of iterations: %f\n', iterationCount);
+    fprintf('Final methane concentration: %6.4f\n', methaneConcentration);
+    fprintf('Total Amount of Fresh Air: %6.0f\n', freshAirVolumeTotal);
 
     if outputTypeFlag == 2
         plot(methaneVolumeValues, freshAirVolumeValues);
